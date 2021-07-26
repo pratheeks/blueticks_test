@@ -1,5 +1,4 @@
-def alternatingRanges(s, up):
-    count = 0
+def alternatingRanges(s):
     str_list = []
     for i in range(len(s)):
         try:
@@ -26,5 +25,5 @@ if __name__ == '__main__':
     if upper not in q:
         q.append(99)
     q = sorted(q)
-    result = alternatingRanges(q, upper)
+    result = alternatingRanges(q)
     print(result)
